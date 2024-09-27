@@ -258,8 +258,9 @@ visitors_with_nations %>%
 _Within each of the 4 nations, what is the proportion of tourist attractions that have free admission for all visitors?_
 
 ```{r Ex_m}
-# Write your code here
-
+visitors_with_nations %>%
+  filter(admission == "Free") %>%
+  group_by(nation)
 
 ```
 
